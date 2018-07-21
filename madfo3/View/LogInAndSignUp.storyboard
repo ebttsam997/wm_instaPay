@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="6Cu-nk-Z1e">
+            <objects>
+                <viewController id="cVK-CJ-Jfg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ugW-p7-lYP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NHR-Lb-dkR" userLabel="View Container">
+                                <rect key="frame" x="55" y="112" width="264" height="443"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="InstaPay" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffr-Vl-gnM">
+                                        <rect key="frame" x="12" y="136" width="240" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="NFo-e0-tHg"/>
+                                            <constraint firstAttribute="height" constant="64" id="tz0-VJ-GkV"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="whiteCreditCard" translatesAutoresizingMaskIntoConstraints="NO" id="7kN-3k-TOU">
+                                        <rect key="frame" x="12" y="0.0" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="BZ9-j6-axs"/>
+                                            <constraint firstAttribute="width" constant="240" id="WhU-Mr-ize"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2Q-4j-H0f">
+                                        <rect key="frame" x="115" y="355" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="443" id="3X3-63-fiY"/>
+                                    <constraint firstAttribute="width" constant="264" id="Ybo-r7-Zgy"/>
+                                    <constraint firstItem="ffr-Vl-gnM" firstAttribute="top" secondItem="7kN-3k-TOU" secondAttribute="bottom" constant="8" id="aJf-Q5-wG6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.23921568627450979" green="0.20392156862745098" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NHR-Lb-dkR" firstAttribute="centerY" secondItem="ugW-p7-lYP" secondAttribute="centerY" id="lhv-SK-k4I"/>
+                            <constraint firstItem="NHR-Lb-dkR" firstAttribute="centerX" secondItem="ugW-p7-lYP" secondAttribute="centerX" id="u6a-S1-At7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="65E-Lk-YDE"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="77M-FL-WXb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-138.40000000000001" y="225.33733133433284"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="whiteCreditCard" width="512" height="512"/>
+    </resources>
+</document>
